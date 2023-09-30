@@ -24,7 +24,7 @@ def to_menu_keyboard():
     return keyboard_markup
 
 
-@dp.message_handler(commands=['photo'], state='*')
+@dp.message_handler(commands=['start'], state='*')
 async def start_bot(message: types.Message, state):
     uid = message.chat.id
     await state.finish()
